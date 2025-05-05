@@ -43,6 +43,29 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+## Open Swagger
+```bash
+$ http://localhost:3000/
+```
+
+## API Get Encrypt Data
+```bash
+{
+  "payload": "string"
+}
+```
+จะได้ Response เป็น data 2 ค่า
+data1 คือ encryptKey
+data2 คือ IV with Payload
+
+## API Get Decrypt Data
+```bash
+{
+  "data1": "string",
+  "data2": "string"
+}
+```
+จะได้ Response เป็น string ข้อมูล
 
 ## Run tests
 
